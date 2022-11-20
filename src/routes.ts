@@ -7,7 +7,7 @@ const urlShortenerController = new UrlShortener();
 
 routes.get('/:shortUrl', urlShortenerController.redirect);
 routes.get('/status/:shortUrl', urlShortenerController.status);
-routes.get('/', urlShortenerController.list);
-routes.post('/', urlShortenerController.create);
+routes.get('/list', urlShortenerController.list);
+routes.post('/create', urlShortenerController.create);
 
 export default routes;

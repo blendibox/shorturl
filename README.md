@@ -35,8 +35,8 @@ export default auth;
 | :------------ | :------------ | :------------ |
 | GET  | `/shortUrl`  |  Redireciona o usuário para o link relacionado ao url minificado  |
 |  GET |  `/status/:shortUrl`  |  Retorna quantas vezes a url minificada foi clicada |
-|  GET |   `/`  |  Lista todas as urls presentes no banco de dados para o usuário autenticado  |
-|  POST | `/`  | Cria uma url minificada e retorna ao usuário  |
+|  GET |   `/list`  |  Lista todas as urls presentes no banco de dados para o usuário autenticado  |
+|  POST | `/create`  | Cria uma url minificada e retorna ao usuário  |
 
 ## Exemplos
 **Criação de url minificada**
@@ -60,10 +60,10 @@ Inserir em JSON no corpo da requisição:
 ```json
 [
   {
-    "shortUrl": "55474d",
-    "longUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jasminealimentos.com%2Falimentacao%2Ftipos-frutas%2F&psig=AOvVaw27IlaASd41jWJtzoVtmeYO&ust=1597336528978000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCk7ZuMlusCFQAAAAAdAAAAABAD",
-    "cliked": 11,
-    "created_at": "2020-8-12"
+    "shortUrl": "885475d",
+    "longUrl": "https://click.linksynergy.com/link?id=4yv1y2Xuono&offerid=685863.20543903210&type=2&murl=https%3A%2F%2Fwww.calvinklein.com.br%2Fcalcinha-tanga-ck-one-algogao-organico-calvin-klein-underwear_preto_mas8540_0987%2Fp%3Fidsku%3D2143775",
+    "cliked": 21,
+    "created_at": "2022-11-20"
   }
 ]
 ```

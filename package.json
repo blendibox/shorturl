@@ -23,6 +23,6 @@
     "predeploy": "npm run knex:migrate",
     "deploy": "gh-pages -b main -d pages"
   },
-  "author": "rbmelolima",
+  "author": "blendibox",
   "license": "ISC"
 }
